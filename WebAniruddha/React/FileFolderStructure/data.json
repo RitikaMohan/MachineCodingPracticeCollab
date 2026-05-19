@@ -1,0 +1,84 @@
+[
+    {
+        "id": 1,
+        "name": "Folder1",
+        "isFolder": true,
+        "children": [
+            {
+                "id": 11,
+                "name": "Folder1File1",
+                "isFolder": false
+            },
+            {
+                "id": 12,
+                "name": "Folder1Folder1",
+                "isFolder": true,
+                "children": [
+                    {
+                        "id": 121,
+                        "name": "Folder1Folder1File",
+                        "isFolder": false
+                    },
+                    {
+                        "id": 122,
+                        "name": "Folder1Folder1Folder",
+                        "isFolder": true,
+                        "children": [
+                            {
+                                "id": 1221,
+                                "name": "Folder1Folder1FolderFile",
+                                "isFolder": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 12,
+                "name": "Folder1File2",
+                "isFolder": false
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Folder2",
+        "isFolder": true,
+        "children": [
+            {
+                "id": 21,
+                "name": "Folder2Folder",
+                "isFolder": true,
+                "children": [
+                    {
+                        "id": 211,
+                        "name": "Folder2FolderFile",
+                        "isFolder": false
+                    }
+                ]
+            },
+            {
+                "id": 22,
+                "name": "Folder2File",
+                "isFolder": false
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Folder3",
+        "isFolder": true,
+        "children": [
+            {
+                "id": 31,
+                "name": "Folder3File",
+                "isFolder": false
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "File1",
+        "isFolder": false
+    }
+]
