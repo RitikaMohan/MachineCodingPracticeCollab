@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function App() {
+export default function DogsImages() {
   let [data, setData] = useState({});
 
   const URL = "https://dog.ceo/api/breeds/image/random";
