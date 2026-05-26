@@ -36,7 +36,7 @@ fun MainScreen(modifier: Modifier, navController: NavController) {
                 Text("Hire People")
             }
 
-            Button(onClick= {}){
+            Button(onClick= {navController.navigate(ScreenRoutes.Jobs.name)}){
                 Text("See Jobs")
             }
         }

@@ -2,6 +2,9 @@ package com.example.dailysysdesprac
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.lifecycle.viewmodel.initializer
+import androidx.lifecycle.viewmodel.viewModelFactory
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -25,7 +28,7 @@ fun AppNav(modifier: Modifier) {
         }
 
         composable(ScreenRoutes.Jobs.name){
-            //JobsScreen()
+            JobsScreen(navController = navController)
         }
     }
 }
