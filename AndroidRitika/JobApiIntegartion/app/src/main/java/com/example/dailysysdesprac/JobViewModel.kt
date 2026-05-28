@@ -2,12 +2,15 @@ package com.example.dailysysdesprac
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import dagger.hilt.android.lifecycle.HiltViewModel
+import jakarta.inject.Inject
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
-class JobViewModel(private val repo: PostRepository) : ViewModel(){
+@HiltViewModel
+class JobViewModel @Inject constructor(private val repo: PostRepository) : ViewModel(){
     private val _jobs = MutableStateFlow<List<JobPost>>(emptyList())
     var jobs: StateFlow<List<JobPost>> = _jobs.asStateFlow()
 

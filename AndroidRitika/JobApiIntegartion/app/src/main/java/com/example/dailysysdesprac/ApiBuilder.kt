@@ -4,7 +4,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 val retrofit = Retrofit.Builder()
-    .baseUrl("https://ritikamohan.github.io/findwork/")
+    .baseUrl("https://findwork-vn33.onrender.com")
     .addConverterFactory(GsonConverterFactory.create())
     .build()
 

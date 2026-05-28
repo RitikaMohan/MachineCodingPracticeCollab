@@ -8,12 +8,13 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.navigation.NavController
 import androidx.compose.foundation.lazy.items
+import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 
 @Composable
-fun JobsScreen(navController: NavController){
-
-    val viewModel: JobViewModel = viewModel()
+fun JobsScreen(navController: NavController,
+               viewModel: JobViewModel = hiltViewModel()
+){
 
     LaunchedEffect(Unit) {
         viewModel.loadJobs()
