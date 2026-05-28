@@ -5,5 +5,5 @@ import retrofit2.http.GET
 
 interface ApiService {
     @GET("/posts")
-    suspend fun getJobs(): Flow<List<JobPost>>
+    suspend fun getJobs(): List<JobPost>
 }
